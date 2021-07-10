@@ -18,11 +18,11 @@ module.exports = withImages({
       },
       {
         source: '/:path*',
-        destination: 'http://localhost:4000/:path*'
+        destination: 'https://cra-to-next.vercel.app/:path*'
       },
       {
         source: '/',
-        destination: 'http://localhost:4000/'
+        destination: 'https://cra-to-next.vercel.app/'
       }
     ]
   }
