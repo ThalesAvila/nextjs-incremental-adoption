@@ -18,11 +18,11 @@ module.exports = withImages({
       },
       {
         source: '/:path*',
-        destination: 'https://cra-to-next.vercel.app/:path*'
+        destination: 'https://demo-spark.matchbox.digital/:path*'
       },
       {
         source: '/',
-        destination: 'https://cra-to-next.vercel.app/'
+        destination: 'https://demo-spark.matchbox.digital/'
       }
     ]
   }
