@@ -10,7 +10,7 @@ module.exports = withImages({
   webpack(config, options) {
     return config
   },
-  rewrites() {
+  async rewrites() {
     return [
       {
         source: '/:path*',
