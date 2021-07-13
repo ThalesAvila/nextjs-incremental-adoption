@@ -7,8 +7,6 @@ import Link from 'next/link'
 export interface repo {
   name: string
   // eslint-disable-next-line camelcase
-  full_name: string
-  // eslint-disable-next-line camelcase
   html_url: string
 }
 
