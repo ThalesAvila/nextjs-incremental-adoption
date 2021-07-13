@@ -38,7 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const response = fetch('https://api.github.com/orgs/nodejs/repos?per_page=20')
   const data = await (await response).json()
 
-  const paths = data.map(repo => {
+  const paths = data?.map(repo => {
     return {
       params: {
         slug: repo.name
