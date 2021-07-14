@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import * as S from '../../styles/components/login'
+import * as S from '@/styles/components/login'
 import logoSpark from '../../assets/brand/logo-spark.svg'
 import logoMatchbox from '../../assets/brand/logo-matchbox.png'
 
