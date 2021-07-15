@@ -19,8 +19,11 @@ export const LeftSection = styled.section`
 `
 
 export const Header = styled.h1`
+  color: #6c6e86;
   font-size: 32px;
   line-height: 1.8;
+  font-weight: 700;
+  margin-top: 48px;
 `
 
 export const Paragraph = styled.p`
