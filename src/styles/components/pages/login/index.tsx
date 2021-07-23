@@ -1,21 +1,29 @@
 import styled from 'styled-components'
+import { Col } from 'reactstrap'
+import React from 'react'
 
-export const LeftSection = styled.section`
-  height: auto;
-  background-color: #fff;
-  padding: 48px 5%;
+const StyledCol = styled(Col)`
+  background-color: ${({ backgroundColor }) => backgroundColor};
+`
 
-  @media (min-width: 100px) {
-    -webkit-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  @media (min-width: 992px) {
-    -webkit-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
+const StyledSection = styled.section`
+  height: 100vh;
+`
+
+export const Section = ({ children, ...rest }) => {
+  return (
+    <StyledCol {...rest}>
+      <StyledSection>{children}</StyledSection>
+    </StyledCol>
+  )
+}
+
+export const Main = styled.main`
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #494949;
 `
 
 export const Header = styled.h1`
@@ -55,12 +63,4 @@ export const Footer = styled.div`
   img {
     padding-left: 1ch;
   }
-`
-
-export const Main = styled.main`
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  color: #494949;
 `
