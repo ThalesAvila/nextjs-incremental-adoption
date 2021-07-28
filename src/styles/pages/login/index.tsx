@@ -18,40 +18,20 @@ export const Section = ({ children, ...rest }) => {
   )
 }
 
-export const Main = styled.main`
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  color: #494949;
-`
-
 export const Header = styled.h1`
   color: #6c6e86;
   font-size: 32px;
   line-height: 1.8;
   font-weight: 700;
   margin-top: 48px;
+  font-family: 'Montserrat', sans-serif;
 `
 
 export const Paragraph = styled.p`
   font-weight: 300;
   font-size: 11px;
   line-height: 1.8;
-`
-
-export const RightSection = styled.section`
-  height: auto;
-  background-color: purple;
-  @media (min-width: 100px) {
-    display: none;
-  }
-  @media (min-width: 992px) {
-    display: block;
-    -webkit-flex: 0 0 66.66667%;
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-  }
+  font-family: 'Montserrat', sans-serif;
 `
 
 export const Footer = styled.div`

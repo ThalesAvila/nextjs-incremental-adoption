@@ -10,10 +10,10 @@ type AuthCardProps = {
   subtitle?: string
 }
 
-const AuthCard: React.FC = ({ children, title, subtitle }: AuthCardProps) => {
+const AuthCard = ({ children, title, subtitle }: AuthCardProps) => {
   return (
     <Row>
-      <Col>
+      <Col sm={{ size: 8, offset: 2 }} style={{ paddingTop: '48px' }}>
         <img src={logoSpark} />
         <S.Header>{title}</S.Header>
         <S.Paragraph>{subtitle}</S.Paragraph>

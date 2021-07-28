@@ -3,8 +3,6 @@ import Head from 'next/head'
 import { Form, Row } from 'reactstrap'
 import * as S from '@/styles/pages/login'
 import AuthCard from '@/components/AuthCard'
-import logoSpark from '../../assets/brand/logo-spark.svg'
-import logoMatchbox from '../../assets/brand/logo-matchbox.png'
 
 const Login = () => {
   return (
@@ -12,16 +10,12 @@ const Login = () => {
       <Head>Login</Head>
       <Row>
         <S.Section backgroundColor="#FFF" md="4" lg="4">
-          <img src={logoSpark} />
-          <S.Header>Bem-vindo(a)</S.Header>
-          <AuthCard>Teste</AuthCard>
-          <S.Paragraph>
-            Por favor, digite suas credenciais para prosseguir.
-          </S.Paragraph>
-          <Form>Form</Form>
-          <S.Footer>
-            powered by <img src={logoMatchbox} />
-          </S.Footer>
+          <AuthCard
+            title="Bem-vindo(a)"
+            subtitle="Por favor, digite suas credenciais para prosseguir."
+          >
+            <Form>Form</Form>
+          </AuthCard>
         </S.Section>
         <S.Section md="8" lg="8">
           Carousel
