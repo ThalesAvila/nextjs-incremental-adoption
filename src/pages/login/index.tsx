@@ -2,12 +2,11 @@ import React from 'react'
 import Head from 'next/head'
 import { Form, Row } from 'reactstrap'
 import * as S from '@/styles/pages/login'
-// import { Row } from '@/styles/components'
 import AuthCard from '@/components/AuthCard'
 import logoSpark from '../../assets/brand/logo-spark.svg'
 import logoMatchbox from '../../assets/brand/logo-matchbox.png'
 
-const Login: React.FC = () => {
+const Login = () => {
   return (
     <>
       <Head>Login</Head>
@@ -15,6 +14,7 @@ const Login: React.FC = () => {
         <S.Section backgroundColor="#FFF" md="4" lg="4">
           <img src={logoSpark} />
           <S.Header>Bem-vindo(a)</S.Header>
+          <AuthCard>Teste</AuthCard>
           <S.Paragraph>
             Por favor, digite suas credenciais para prosseguir.
           </S.Paragraph>

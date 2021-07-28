@@ -4,11 +4,13 @@ import * as S from '@/styles/pages/login'
 import logoSpark from '../../assets/brand/logo-spark.svg'
 import logoMatchbox from '../../assets/brand/logo-matchbox.png'
 
-const AuthCard: React.FC<{
+type AuthCardProps = {
   children: React.ReactNode
-  title: string
-  subtitle: string
-}> = ({ children, title, subtitle }) => {
+  title?: string
+  subtitle?: string
+}
+
+const AuthCard: React.FC = ({ children, title, subtitle }: AuthCardProps) => {
   return (
     <Row>
       <Col>
