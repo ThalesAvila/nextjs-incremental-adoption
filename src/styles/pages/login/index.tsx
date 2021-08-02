@@ -3,7 +3,8 @@ import { Col } from 'reactstrap'
 import React from 'react'
 
 const StyledCol = styled(Col)`
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background-color: ${({ backgroundcolor }) => backgroundcolor};
+  padding: 0;
 `
 
 const StyledSection = styled.section`

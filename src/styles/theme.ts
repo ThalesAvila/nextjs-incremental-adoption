@@ -1,8 +1,9 @@
 const theme = {
+  spark: {},
   colors: {
     background: '#121214',
     text: '#8257e6',
-    primary: '#e1e1e6'
+    primary: '#8257e6'
   }
 }
 
